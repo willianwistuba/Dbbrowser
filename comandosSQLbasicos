@@ -1,0 +1,54 @@
+Comandos Básicos de SQL - Tabela inventario1
+
+A tabela inventario1 contém colunas sem nomes específicos, por isso, as colunas estão nomeadas como field1, field2, field3, e assim por diante.
+  
+Aqui estão alguns comandos básicos para manipular e consultar dados dessa tabela.
+
+1. Selecionar todos os dados da tabela - Este comando seleciona todas as colunas e linhas da tabela inventario1:
+
+SELECT * FROM [nometabela];
+
+2. Selecionar colunas específicas:
+Para selecionar apenas algumas colunas (por exemplo, field1 e field2):
+
+SELECT field1, field2 FROM [nometabela];
+
+3. Filtrar dados com WHERE:
+Este comando retorna apenas as linhas onde field1 é igual a 100:
+
+SELECT * FROM [nometabela]
+WHERE field2 = '44';
+
+4. Ordenar os dados com ORDER BY:
+Para ordenar os dados com base na coluna field2 em ordem crescente:
+
+SELECT * FROM [nometabela]
+ORDER BY field2 ASC;
+
+Dica: Use DESC em vez de ASC para ordenar em ordem decrescente.
+
+5. Limitar o número de resultados com LIMIT:
+Para limitar a quantidade de linhas retornadas a apenas 5:
+
+SELECT * FROM [nometabela]
+LIMIT 5;
+
+6. Inserir novos dados na tabela:
+
+INSERT INTO [nometabela] (field1, field2, field3)
+VALUES (101, 'Novo Produto', 500);
+
+7. Atualizar dados com UPDATE:
+Atualiza o valor de field2 para 'Produto Atualizado' onde field1 é igual a 100:
+
+UPDATE [nometabela]
+SET field2 = 'Produto Atualizado'
+WHERE field1 = 100;
+
+8. Excluir dados com DELETE:
+Remove as linhas onde o valor de field1 é igual a 100:
+
+DELETE FROM [nometabela]
+WHERE field1 = 100;
+
+Esses são exemplos de comandos básicos de SQL que podem ser usados para manipular e consultar dados em uma tabela. Com esses comandos, você pode selecionar, ordenar, inserir, atualizar e excluir dados com eficiência.
